@@ -1,20 +1,15 @@
 import { SchemaComposer } from 'graphql-compose';
 
-import db from '../utils/db'; // eslint-disable-line no-unused-vars
-
 const schemaComposer = new SchemaComposer();
 
 import { UserQuery, UserMutation } from './user';
-import { AdminQuery, AdminMutation } from './admin';
 
 schemaComposer.Query.addFields({
-    ...UserQuery,
-    ...AdminQuery,
+    ...UserQuery
 });
 
 schemaComposer.Mutation.addFields({
-    ...UserMutation,
-    ...AdminMutation,
+    ...UserMutation
 });
 
 export default schemaComposer.buildSchema();

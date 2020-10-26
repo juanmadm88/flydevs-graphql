@@ -23,11 +23,11 @@ export const UserSchema = new Schema(
     },
     {
         collection: 'users',
+    },
+    {
+        versionKey: false
     }
 );
-
-
-// UserSchema.index({ _id: 1 }, { sparse: true });
 
 export const User = mongoose.model('User', UserSchema);
 export const UserTC = composeWithMongoose(User);
