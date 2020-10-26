@@ -13,4 +13,5 @@ $ npm i
 #then execute the following command to start dev env
 $ yarn dev
 
+#testing server with apollo playground on browser https://localhost:8000/flydevs
 
