@@ -10,14 +10,11 @@ export const UserSchema = new Schema(
         },
         lastName: {
             type: String,
-            lowercase: true,
             trim: true,
-            unique: true,
             required: true
         },
         age: {
             type: Number,
-            unique: true,
             required: false
         }
     },
