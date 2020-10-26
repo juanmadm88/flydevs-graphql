@@ -23,9 +23,6 @@ export const UserSchema = new Schema(
     },
     {
         collection: 'users',
-    },
-    {
-        versionKey: false
     }
 );
 
