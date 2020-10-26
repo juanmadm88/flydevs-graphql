@@ -3,7 +3,8 @@ import { UserTC } from '../models/user';
 const UserQuery = {
     userById: UserTC.getResolver('findById'),
     userOne: UserTC.getResolver('findOne'),
-    userMany: UserTC.getResolver('findMany'),
+    userMany: UserTC.getResolver('findMany')
+
 };
 
 const UserMutation = {
